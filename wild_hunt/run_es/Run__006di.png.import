@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Run__006di.png-6130266ab8eb3a8e7be205c4d63726fd.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://run_es/Run__006di.png"
+dest_files=[ "res://.import/Run__006di.png-6130266ab8eb3a8e7be205c4d63726fd.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

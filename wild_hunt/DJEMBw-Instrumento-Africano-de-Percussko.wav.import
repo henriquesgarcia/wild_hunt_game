@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/DJEMBw-Instrumento-Africano-de-Percussko.wav-fe44d72c3bbe30ddff8d4da69a12811f.sample"
+
+[deps]
+
+source_file="res://DJEMBw-Instrumento-Africano-de-Percussko.wav"
+dest_files=[ "res://.import/DJEMBw-Instrumento-Africano-de-Percussko.wav-fe44d72c3bbe30ddff8d4da69a12811f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

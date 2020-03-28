@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://bonus3.gd" type="Script" id=1]
+[ext_resource path="res://PERSONAGEM/pata_d.png" type="Texture" id=2]
+[ext_resource path="res://coin.wav" type="AudioStream" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 61.2975
+
+[node name="bonus3" type="Area2D"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -18 )
+shape = SubResource( 1 )
+
+[node name="mus" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -2070, -711 )
+stream = ExtResource( 3 )
+autoplay = true
+[connection signal="body_entered" from="." to="." method="_on_bonus3_body_entered"]

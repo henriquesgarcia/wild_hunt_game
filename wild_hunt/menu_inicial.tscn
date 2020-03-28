@@ -1,0 +1,137 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://menu_inicial.gd" type="Script" id=1]
+[ext_resource path="res://back1.png" type="Texture" id=2]
+[ext_resource path="res://chao1.png" type="Texture" id=3]
+[ext_resource path="res://fonts/FutilePro.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://play.png" type="Texture" id=5]
+[ext_resource path="res://bg_equipe.png" type="Texture" id=6]
+[ext_resource path="res://audio/menu_music.ogg" type="AudioStream" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 115
+outline_size = 7
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 55
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 55
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 21
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 19
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 9
+font_data = ExtResource( 4 )
+
+[node name="menu_inicial" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg_menu" type="Sprite" parent="."]
+scale = Vector2( 0.677239, 0.70014 )
+texture = ExtResource( 2 )
+centered = false
+region_rect = Rect2( 0, 0, 1024, 628 )
+
+[node name="chao1" type="Sprite" parent="bg_menu"]
+position = Vector2( 795.693, 1149.08 )
+scale = Vector2( 1.25616, 1.50625 )
+texture = ExtResource( 3 )
+
+[node name="nome_jogo" type="Label" parent="."]
+margin_left = 267.063
+margin_top = 62.0091
+margin_right = 757.063
+margin_bottom = 164.009
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.14902, 0.882353, 0.258824, 1 )
+text = "Wild Hunt"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_sair" type="Button" parent="."]
+margin_left = 444.0
+margin_top = 478.543
+margin_right = 566.0
+margin_bottom = 533.543
+focus_mode = 0
+custom_fonts/font = SubResource( 2 )
+action_mode = 0
+enabled_focus_mode = 0
+text = "exit"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_iniciar" type="Button" parent="."]
+margin_left = 421.546
+margin_top = 240.034
+margin_right = 583.546
+margin_bottom = 397.034
+focus_mode = 0
+custom_fonts/font = SubResource( 3 )
+action_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg_equipe" type="Sprite" parent="."]
+position = Vector2( 908.495, 487.294 )
+scale = Vector2( 0.16386, 0.143363 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 815.0
+margin_top = 439.0
+margin_right = 999.0
+margin_bottom = 458.0
+custom_fonts/font = SubResource( 4 )
+text = "Development Team:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 829.646
+margin_top = 474.641
+margin_right = 979.646
+margin_bottom = 531.641
+custom_fonts/font = SubResource( 5 )
+text = "Jéssica Helem
+Henrique Garcia"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="menu_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true
+[connection signal="pressed" from="btn_sair" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="btn_iniciar" to="." method="_on_btn_iniciar_pressed"]

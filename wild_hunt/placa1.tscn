@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://placa1.gd" type="Script" id=1]
+[ext_resource path="res://dark_tone_no_writing.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 252.035, 107.044 )
+
+[node name="placa1" type="Area2D"]
+scale = Vector2( 0.6, 0.6 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -9.61875 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -64.1251 )
+scale = Vector2( 0.4, 0.4 )
+shape = SubResource( 1 )

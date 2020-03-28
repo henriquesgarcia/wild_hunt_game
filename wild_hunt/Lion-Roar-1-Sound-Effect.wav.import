@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Lion-Roar-1-Sound-Effect.wav-01139b226932b40b404f27663bfc5c8a.sample"
+
+[deps]
+
+source_file="res://Lion-Roar-1-Sound-Effect.wav"
+dest_files=[ "res://.import/Lion-Roar-1-Sound-Effect.wav-01139b226932b40b404f27663bfc5c8a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
